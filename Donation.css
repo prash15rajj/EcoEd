@@ -1,0 +1,130 @@
+/* Basic styling for the top bar */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:regular,700');
+
+.company-name img {
+  height: 50px; /* Adjust height as needed */
+  margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Increased height */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)); /* Gradient effect */
+    overflow: hidden;
+    text-align: right;
+    z-index: 999; /* Ensure the top bar is above other content */
+    line-height: 80px; /* Vertically center contents */
+  }
+  
+  /* Style the links inside the top bar */
+  .top-bar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
+    font-size: 45px; /* Increased font size */
+  }
+  
+  /* Change the color of links on hover */
+  .top-bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style for the company name */
+  .company-name {
+    float: left;
+    padding: 16px 20px;
+    color: white;
+    font-size: 55px; /* Increased font size */
+    font-weight: bold;
+  }
+  
+  body {
+    background-image: url('Home.png'); /* Background image for the body */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px; /* Adjust padding to accommodate the top bar height */
+    color: white; /* Text color for the content */
+    margin: 0; /* Remove default body margin */
+    font-family: 'Amatic SC', sans-serif; /* Use Amatic SC font */
+  }
+
+  /* Style for the donation section */
+  #donate {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #donate .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #donate h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  #donate form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #donate label {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #donate input, #donate textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #donate button {
+    padding: 15px 30px;
+    background-color: #0b881e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+  }
+
+  #donate button:hover {
+    background-color: #0056b3;
+  }
+/* Adjust the width of the card element container */
+#card-element {
+    width: 100%;
+  }
+  
+  /* Style the individual input fields */
+  #card-element .InputElement {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style the error message */
+  #card-errors {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  

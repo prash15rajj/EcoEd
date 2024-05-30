@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoEd</title>
+<link rel="stylesheet" href="Home.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:regular,700" rel="stylesheet">
+<link rel="icon" type="image/png" href="ecoed.png">
+  
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="company-name">
+      <img src="ecoed.png" alt="EcoEd Logo"> <!-- Add logo here -->
+      EcoEd
+    </div>
+  <a href="Home.html">Home</a>
+  <a href="Game_Selection.html">Games</a>
+  <a href="WasteWiz.html">Waste Wizard</a>
+  <a href="AboutUs.html">About Us</a>
+</div>
+
+<div class="Background">
+    <p>Join the EcoEd mission - Learn, Play and save the planet Together.</p>
+</div>
+
+<div class="calculator">
+  <h2>Carbon Footprint Calculator</h2>
+  <label for="electricity">Electricity Usage (kWh/year):</label>
+  <input type="number" id="electricity" min="0">
+  <label for="transport">Transportation (miles/year):</label>
+  <input type="number" id="transport" min="0">
+  <label for="waste">Waste Generation (lbs/year):</label>
+  <input type="number" id="waste" min="0">
+  <button onclick="calculateCarbonFootprint()">Calculate</button>
+  <div id="result"></div>
+</div>
+
+<script src="Home.js"></script>
+</body>
+</html>

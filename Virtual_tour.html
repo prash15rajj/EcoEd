@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="Virtual_tour.css">
+</head>
+<body>
+    <div id="tour-container">
+        <select id="view-select">
+            <option value="360-image-1">View 1</option>
+            <option value="360-video-1">View 2 </option>
+            <!-- Add more options as needed -->
+        </select>
+        <button id="start-tour">Start Tour</button>
+
+        <a-scene id="scene" style="display: none;">
+            <!-- 360-degree images -->
+            <a-sky id="360-image-1" src="360_image.jpg" rotation="0 -90 0"></a-sky>
+            <!-- 360-degree video -->
+            <a-videosphere id="360-video-1" src="vedio1.mp4" rotation="0 -90 0" style="display: none;"></a-videosphere>
+            <!-- Add more 360-degree images and videos as needed -->
+        </a-scene>
+    </div>
+
+    <script src="Virtual_tour.js"></script>
+</body>
+</html>

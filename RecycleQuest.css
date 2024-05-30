@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:regular,700');
+
+.company-name img {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 10px; /* Add spacing between logo and text */
+  }
+  
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Increased height */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)); /* Gradient effect */
+    overflow: hidden;
+    text-align: right;
+    z-index: 999; /* Ensure the top bar is above other content */
+    line-height: 80px; /* Vertically center contents */
+  }
+  
+  /* Style the links inside the top bar */
+  .top-bar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
+    font-size: 45px; /* Increased font size */
+    font-family: 'Amatic SC', sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .top-bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Active link */
+  /*.top-bar .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Style for the company name */
+  .company-name {
+    float: left;
+    padding: 16px 20px;
+    color: white;
+    font-size: 55px; /* Increased font size */
+    font-family: 'Amatic SC', sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('Recyclequest.png'); /* Replace 'background-image.jpg' with your image file */
+    background-size: 100% 100%; /* Ensure the background image covers the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensure the background image is fixed */
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: #008080;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#roundsInputDiv {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Add margin to create space from the top */
+}
+
+button:hover {
+    background-color: #005757;
+}
+
+#gameArea {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#scoreInfo {
+    font-weight: bold;
+}
